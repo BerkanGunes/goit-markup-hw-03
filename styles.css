@@ -43,10 +43,18 @@ footer .logo a {
 footer .logo a span {
     color: #2e2f42;
 }
-
+h1 {
+    font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        text-transform: capitalize;
+    
+}
 /* Ortak Section Başlık Stili */
-section h1,
-section#section-4 h2,
+
+.section-4 h2,
 .section-3 h2 {
     font-size: 36px;
     line-height: 1.11;
