@@ -34,21 +34,39 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
-/* C13 - Butonlar için pointer cursor */
-button {
-    cursor: pointer;
-    background-color: #007bff;
+/* section-1 ID'sine özel stil */
+#section-1 {
+    background-color: #2E2F42;
+    /* Arka plan rengi */
     color: white;
+    /* Yazı rengi beyaz */
+    padding: 40px 20px;
+    /* İçerik için padding */
+}
+
+#section-1 h1 {
+    font-size: 2rem;
+    /* Başlık boyutu */
+    margin-bottom: 20px;
+    /* Başlık ile buton arasına boşluk ekleyelim */
+}
+
+#section-1 button {
+    background-color: #007bff;
+    /* Buton arka plan rengi */
+    color: white;
+    /* Buton yazı rengi */
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
+    cursor: pointer;
+    /* Buton üzerine gelindiğinde pointer cursor */
 }
 
-button:hover {
+#section-1 button:hover {
     background-color: #0056b3;
-    /* Buton üzerine gelindiğinde renk değişimi */
+    /* Buton hover rengi */
 }
 
 /* C12 - Font-weight ayarları */
@@ -96,3 +114,4 @@ img {
     display: block;
     margin: 0 auto;
 }
+/* Tüm bölüm için stil */
