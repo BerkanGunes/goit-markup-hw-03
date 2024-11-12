@@ -1,117 +1,204 @@
-/* C6 - Body font-family */
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    /* C8 - Başlangıç metin rengi */
-    font-size: 16px;
-    /* C9 - Tüm metin öğeleri için aynı font-size */
-    line-height: 1.5;
-    /* C10 - Satır yüksekliği */
-}
-
-/* C11 - Genel renkler ve arka planlar */
-a {
-    color: #007bff;
-    /* Bağlantılar için renk */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0056b3;
-    /* Bağlantı üzerine gelindiğinde renk değişimi */
-}
-
-header {
-    background-color: #f8f9fa;
-    /* Header arka plan rengi */
-}
-
-footer {
-    background-color: #343a40;
-    /* Footer arka plan rengi */
-    color: #fff;
-    /* Footer metin rengi */
-    text-align: center;
-    padding: 20px;
-}
-/* section-1 ID'sine özel stil */
-#section-1 {
-    background-color: #2E2F42;
+/* Section styles */
+section {
+    background-color: #2e2f42;
     /* Arka plan rengi */
-    color: white;
-    /* Yazı rengi beyaz */
-    padding: 40px 20px;
-    /* İçerik için padding */
 }
 
-#section-1 h1 {
-    font-size: 2rem;
-    /* Başlık boyutu */
-    margin-bottom: 20px;
-    /* Başlık ile buton arasına boşluk ekleyelim */
+section h1 {
+    font-size: 56px;
+    /* Başlık font boyutu */
+    line-height: 1.07;
+    /* Satır yüksekliği */
+    text-align: center;
+    /* Metni ortala */
+    letter-spacing: 0.02em;
+    /* Harf aralıkları */
+    color: #ffffff;
+    /* Yazı rengi */
 }
 
-#section-1 button {
-    background-color: #007bff;
+section button {
+    background-color: #4D5AE5;
     /* Buton arka plan rengi */
-    color: white;
-    /* Buton yazı rengi */
-    border: none;
-    padding: 10px 20px;
+    font-family: "Roboto", sans-serif;
+    /* Yazı tipi */
+    font-weight: 500;
+    /* Yazı tipi kalınlığı */
     font-size: 16px;
-    border-radius: 5px;
+    /* Yazı tipi boyutu */
+    line-height: 1.5;
+    /* Satır yüksekliği */
+    letter-spacing: 0.04em;
+    /* Harf aralıkları */
+    color: #ffffff;
+    /* Yazı rengi */
     cursor: pointer;
-    /* Buton üzerine gelindiğinde pointer cursor */
+    /* Fare imleci pointer */
 }
 
-#section-1 button:hover {
-    background-color: #0056b3;
-    /* Buton hover rengi */
+section button:hover,
+section button:focus {
+    background-color: #404BBF;
+    /* Hover ve focus arka plan rengi */
+}
+/* Section 2 için düzenlemeler */
+
+/* Listedeki 1. maddedeki <h3> etiketi */
+li h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 
-/* C12 - Font-weight ayarları */
-h1,
-h2,
-h3 {
-    font-weight: 600;
+/* Listedeki 1. maddedeki <p> etiketi */
+li p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+/* Section 3 */
+.section_3 {
+    background-color: #f4f4fd;
+    /* Section 3 arka plan rengi */
 }
 
-/* C7 - Diğer öğeler Roboto yazı tipini miras alacak */
-h1,
-h2,
-h3,
-p,
-ul,
-li {
-    font-family: inherit;
+.section_3 h2 {
+    font-size: 36px;
+    /* Başlık font boyutu */
+    line-height: 1.11;
+    /* Başlık satır yüksekliği */
+    text-align: center;
+    /* Başlık hizalama */
+    letter-spacing: 0.02em;
+    /* Harfler arasındaki boşluk */
+    text-transform: capitalize;
+    /* Başlık ilk harfleri büyük yapma */
+    color: #2e2f42;
+    /* Başlık rengi */
 }
 
-/* Liste düzenlemeleri */
-ul {
+/* Liste için stil */
+.section_3 ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li {
-    margin-bottom: 15px;
+.section_3 ul li {
+    background-color: #ffffff;
+    /* Liste öğesi arka plan rengi */
 }
 
-ul li h3 {
+.section_3 ul li h3 {
+    font-weight: 500;
+    /* Başlık font kalınlığı */
+    font-size: 20px;
+    /* Başlık font boyutu */
+    line-height: 1.2;
+    /* Başlık satır yüksekliği */
+    letter-spacing: 0.02em;
+    /* Başlık harf aralığı */
+    color: #2e2f42;
+    /* Başlık rengi */
+}
+
+.section_3 ul li p {
+    font-size: 16px;
+    /* Paragraf font boyutu */
+    line-height: 1.5;
+    /* Paragraf satır yüksekliği */
+    letter-spacing: 0.02em;
+    /* Paragraf harf aralığı */
+    color: #434455;
+    /* Paragraf rengi */
+}
+/* Section 4 */
+section#section-4 {
+    background-color: #f4f4fd;
+}
+
+section#section-4 h2 {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+section#section-4 img {
+    width: 360px;
+}
+
+section#section-4 ul li:nth-child(1) h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+section#section-4 ul li:nth-child(1) p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+section#section-4 ul li:nth-child(2) img {
+    width: 360px;
+}
+
+section#section-4 ul li:nth-child(2) h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+section#section-4 ul li:nth-child(2) p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+section#section-4 ul li:nth-child(3) img {
+    width: 360px;
+}
+/* Footer */
+footer {
+    background-color: #2e2f42;
+    color: #2e2f42;
+    /* footer metin rengi */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Logo Link */
+footer .logo a {
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
-    /* Başlıklar için font-weight */
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    text-decoration: none;
 }
 
-/* C14 - Tarayıcı varsayılan stilleri tekrarlamamaya dikkat et */
-nav a,
-p {
-    font-style: normal;
-    font-weight: 400;
+/* Logo içindeki span */
+footer .logo a span {
+    color: #2e2f42;
 }
 
-img {
-    max-width: 100%;
-    /* Görsellerin taşmasını engelle */
-    display: block;
-    margin: 0 auto;
+/* Paragraf */
+footer p {
+    line-height: 1.5;
+    color: #F4F4FD;
+    letter-spacing: 0.02em;
+    font-size: 16px;
 }
-/* Tüm bölüm için stil */
