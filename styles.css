@@ -1,44 +1,98 @@
-/* Tüm header için flex düzeni */
+/* C6 - Body font-family */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    /* C8 - Başlangıç metin rengi */
+    font-size: 16px;
+    /* C9 - Tüm metin öğeleri için aynı font-size */
+    line-height: 1.5;
+    /* C10 - Satır yüksekliği */
+}
+
+/* C11 - Genel renkler ve arka planlar */
+a {
+    color: #007bff;
+    /* Bağlantılar için renk */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    /* Bağlantı üzerine gelindiğinde renk değişimi */
+}
+
 header {
-    width: 1440px;
-    height: 72px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    border-bottom: 1px solid black;
+    background-color: #f8f9fa;
+    /* Header arka plan rengi */
 }
 
-/* Logo alanı */
-.logo {
-    font-size: 24px;
+footer {
+    background-color: #343a40;
+    /* Footer arka plan rengi */
+    color: #fff;
+    /* Footer metin rengi */
+    text-align: center;
+    padding: 20px;
 }
 
-/* Nav menüsü */
-.nav-menu {
-    display: flex;
-    gap: 40px;
-    
-    margin: 0;
-    padding: 0;
+/* C13 - Butonlar için pointer cursor */
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
-.nav-menu li a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
+button:hover {
+    background-color: #0056b3;
+    /* Buton üzerine gelindiğinde renk değişimi */
 }
 
-/* Address kısmı */
-address ul {
-    display: flex;
-    gap: 20px;
+/* C12 - Font-weight ayarları */
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+/* C7 - Diğer öğeler Roboto yazı tipini miras alacak */
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    font-family: inherit;
+}
+
+/* Liste düzenlemeleri */
+ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
 
-address a {
-    text-decoration: none;
-    color: black;
+ul li {
+    margin-bottom: 15px;
+}
+
+ul li h3 {
+    font-weight: 700;
+    /* Başlıklar için font-weight */
+}
+
+/* C14 - Tarayıcı varsayılan stilleri tekrarlamamaya dikkat et */
+nav a,
+p {
+    font-style: normal;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    /* Görsellerin taşmasını engelle */
+    display: block;
+    margin: 0 auto;
 }
