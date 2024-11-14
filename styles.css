@@ -14,6 +14,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    text-decoration: none;
 }
 
 /* Logo İçindeki Span */
@@ -21,33 +22,33 @@ body {
     color: #2e2f42;
 }
 
-/* Navigasyon Menüsü */
-.nav-menu {
+/* Navigasyon listesi stili */
+nav ul {
     list-style: none;
+    /* Liste işaretlerini kaldır */
     padding: 0;
+    /* İç boşluğu sıfırla */
 }
 
-.nav-menu li {
-    display: inline-block;
+nav ul li {
+    display: inline;
+    /* Liste elemanlarını yan yana diz */
     margin-right: 20px;
-    /* Aralarına boşluk eklemek için */
+    /* Elemanlar arasında boşluk */
 }
 
-.nav-menu a {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+/* Link stili */
+nav ul li a {
     text-decoration: none;
-    /* Alt çizgi olmaması için */
+    /* Altı çizgiyi kaldır */
+    color: #4d5ae5;
+    /* Link rengi */
 }
 
-.nav-menu a:hover,
-.nav-menu a:focus {
-    color: #404bbf;
+nav ul li a:hover {
+    text-decoration: underline;
+    /* Üzerine gelindiğinde altı çizgi ekle */
 }
-
 /* Adres Stili */
 address {
     font-style: normal;
@@ -253,34 +254,21 @@ address a:focus {
         color: #434455;
     }
     
-    /* Footer Stili */
-    footer {
-        background-color: #f4f4fd;
-        /* Arka plan rengi */
-        padding: 20px;
-        text-align: center;
-        /* Metni ortalamak için */
-        color: #2e2f42;
-        /* Yazı rengi */
-    }
+        * Footer stili */ .footer_example {
+            background-color: #2e2f42;
+            /* Arka plan rengi */
+            padding: 20px;
+            /* İç boşluk */
+            color: #F4F4FD;
+            /* Metin rengi */
+        }
     
-    footer .logo_class-example {
-        font-family: "Raleway", sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4d5ae5;
-    }
-    
-    footer p {
-        margin-top: 10px;
-        /* Üstte boşluk */
-        font-size: 16px;
-        /* Yazı boyutu */
-        line-height: 1.5;
-        /* Satır aralığı */
-        letter-spacing: 0.02em;
-        /* Harf aralığı */
-    }
+        /* Paragraf stili */
+        .footer_text {
+            line-height: 1.5;
+            /* Satır aralığı */
+            color: #F4F4FD;
+            /* Metin rengi */
+            letter-spacing: 0.02em;
+            /* Harfler arası boşluk */
+        }
