@@ -254,21 +254,42 @@ address a:focus {
         color: #434455;
     }
     
-        * Footer stili */ .footer_example {
-            background-color: #2e2f42;
-            /* Arka plan rengi */
-            padding: 20px;
-            /* İç boşluk */
-            color: #F4F4FD;
-            /* Metin rengi */
-        }
-    
-        /* Paragraf stili */
-        .footer_text {
-            line-height: 1.5;
-            /* Satır aralığı */
-            color: #F4F4FD;
-            /* Metin rengi */
-            letter-spacing: 0.02em;
-            /* Harfler arası boşluk */
-        }
+                footer {
+                    background-color: #2e2f42;
+                    /* Arka plan rengi */
+                    padding: 20px;
+                    /* Footer içindeki alanı artırmak için isteğe bağlı */
+                }
+        
+                .logo_class-example {
+                    font-family: "Raleway", sans-serif;
+                    /* Font ailesi */
+                    font-weight: 700;
+                    /* Metin kalınlığı */
+                    font-size: 18px;
+                    /* Font boyutu */
+                    line-height: 1.17;
+                    /* Satır aralığı */
+                    letter-spacing: 0.03em;
+                    /* Harfler arasındaki boşluk */
+                    text-transform: uppercase;
+                    /* Harflerin büyük görünmesi */
+                    color: #4d5ae5;
+                    /* Metin rengi */
+                    text-decoration: none;
+                    /* Alt çizgi olmaması için */
+                }
+        
+                .span_example {
+                    color: #2e2f42;
+                    /* 'Studio' metninin rengi */
+                }
+        
+                footer p {
+                    line-height: 1.5;
+                    /* Paragraf satır aralığı */
+                    color: #F4F4FD;
+                    /* Paragraf metin rengi */
+                    letter-spacing: 0.02em;
+                    /* Paragraf harfler arasındaki boşluk */
+                }
