@@ -3,7 +3,30 @@ body {
     color: #434455;
     background-color: #FFFFFF;
 }
-
+li{
+    list-style-type: none;
+}
+header{
+    width: 1440px;
+    height: 72px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    margin: 24px 156px 24px 156px;
+    gap: 332px;
+}
+header a{
+    text-decoration: none;
+}
+header ul,
+header li{
+    display: flex;
+    gap:40px;
+    
+}
+nav{
+    display: flex;
+}
 .nav-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -12,6 +35,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    padding-top: 16px;
 }
 
 .nav-logo .logo-span {
@@ -48,16 +72,31 @@ body {
 }
 
 .first-section {
+    display: flex; /* Flexbox etkinleştirilir */
+    flex-direction: column; /* Öğeleri dikey hizala */
+    justify-content: center; /* Dikeyde ortalar */
+    align-items: center; /* Yatayda ortalar */
     background-color: #2e2f42;
+    width: 1440px;
+    height: 600px;
+    top: 72px;
 }
 
+
 .first-section__title {
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
+    position: absolute; /* Konumlandırma için gerekli */
+    width: 496px; /* Yazının genişliği */
+    height: 120px; /* Yazının yüksekliği */
+    top: 260px; /* Sayfanın üstünden 260px boşluk */
+    left: 472px; /* Sayfanın solundan 472px boşluk */
+    font-size: 56px; /* Yazı boyutu */
+    line-height: 60px; /* Satırlar arasındaki mesafe */
+    text-align: center; /* Yazıyı ortalar */
+    color: #FFFFFF; /* Yazının rengi */
+    letter-spacing: 0.02em; /* Harfler arası boşluk */
+    margin: 0; /* Varsayılan dış boşluğu kaldırır */
 }
+
 
 .first-section__btn {
     font-family: "Roboto", sans-serif;
@@ -67,11 +106,28 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    width: 169px;
+    height: 56px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 20px; /* Düğme ile başlık arasındaki boşluk */
 }
+
 
 .first-section__btn:hover,
 .first-section__btn:focus {
     background-color: #404BBF;
+}
+.second-section ul{
+    display: flex; /* Flexbox etkinleştirilir */       
+    align-items: center; /* Dikeyde hizalar */  
+    gap: 8px; /* Kutular arasındaki mesafe */  
+    padding: 156px;
+}
+.second-section li{
+    width: 264px;
+    height: 104px;
+    
 }
 
 .second-section__list-title {
@@ -80,6 +136,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    
 }
 
 .second-section .text {
@@ -91,6 +148,9 @@ body {
 
 .third-section {
     background-color: #f4f4fd;
+    width: 1440px;
+    height: 732px;
+    top: 1016px;
 }
 
 .third-section__title {
@@ -101,9 +161,17 @@ body {
     text-transform: capitalize;
     color: #2e2f42;
 }
+.third-section ul{
+    display: flex; /* Flexbox etkinleştirilir */       
+    align-items: center; /* Dikeyde hizalar */  
+    gap: 32px; /* Kutular arasındaki mesafe */  
+    padding: 156px;
+    
+}
 
 .third-section__list .list-item {
     background-color: #ffffff;
+    
 }
 
 .third-section__list .member-name {
@@ -112,14 +180,24 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    
 }
 
 .third-section__list .text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    
+    
 }
+.forth-section{
+    width: 1128px;
+    height: 1000px; 
+    padding-left: 156px;    
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
 
+}
 .forth-section__title {
     font-size: 36px;
     line-height: 1.11;
@@ -128,7 +206,13 @@ body {
     text-transform: capitalize;
     color: #2E2F42;
 }
-
+.forth-section ul{
+    display: grid; /* Grid düzenini etkinleştirir */  
+    grid-template-columns: repeat(3, 1fr); /* 3 eşit sütun */  
+    grid-template-rows: repeat(2, auto);
+    gap: 20px; /* Öğeler arasındaki boşluk */
+    padding: 20px; /* Kapsayıcı iç boşluk */
+}
 .list-item__title {
     font-weight: 500;
     font-size: 20px;
@@ -146,12 +230,22 @@ body {
 
 .footer {
     background-color: #2e2f42;
-}
-
+    width: 1440px;
+    height: 312px;
+    display: flex;
+    flex-direction: column; /* İçerikleri dikey sıralar */
+    align-items: flex-start; /* Yatayda sola hizalar */
+    padding-top: 100px; /* Tüm içerikler için yukarı boşluk */
+    padding-left: 156px;
+    }
+   .footer p{
+    width: 264px;
+    height: 72px;
+   } 
 .footer .text {
     color: #F4F4FD;
     letter-spacing: 0.02em;
-    line-height: 1.5;
+    line-height: 1.5;  
 }
 
 .footer-logo {
@@ -162,7 +256,9 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-}
+    }
+    
+
 
 .footer-logo .logo-span {
     color: #f4f4fd;
