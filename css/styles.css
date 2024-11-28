@@ -228,13 +228,13 @@ button{
 }
 
 
-
 .third-section {
-    padding: 120px 0; /* Kenar boşlukları */
+    padding: 120px 0;
     background-color: #f4f4fd;
+    text-align: center;
 }
 
-.container {
+.container3 {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -242,52 +242,54 @@ button{
 .third-section__title {
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
     color: #2e2f42;
-    margin-bottom: 72px; /* Başlık alt boşluğu */
+    margin-bottom: 72px;
 }
 
 .third-section__list {
     display: flex;
+    justify-content: center;
     gap: 24px;
-    list-style: none; /* Varsayılan madde işaretlerini kaldır */
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .list-item {
-    width: calc((100% - 72px) / 4);
-    flex-basis: calc((100% - 3 * 24px) / 4);
     background-color: #ffffff;
-    border-radius: 0px 0px 4px 4px; /* Alt kısımdaki yuvarlaklıklar */
-    overflow: hidden; /* İçerik taşmasını önler */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    overflow: hidden;
+    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
     text-align: center;
 }
 
+.team-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f4f4fd; /* Alt çizgi efekti */
+    margin-bottom: 16px; /* Görüntü ile yazı arasında boşluk */
+}
+
 .list-item__details {
-    padding: 32px 0; /* Çalışanın adı ve unvanı için boşluk */
+    padding: 16px;
 }
 
 .member-name {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px; /* Başlık alt boşluğu */
-    text-align: center;
+    margin-bottom: 8px;
 }
 
 .text {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center; /* Metin hizalaması */
     color: #434455;
+    line-height: 1.5;
 }
-
+   
+}
 .forth-section{
     width: 1128px;
     height: 1000px; 
