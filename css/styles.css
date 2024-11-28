@@ -116,6 +116,9 @@ img {
 
 
 /* Section Styling */
+h1 {
+    max-width: 496px;
+}
 .first-section {
     padding: 188px 0; /* Kenar boşlukları */
     background-color: #2e2f42; /* Arka plan rengi */
@@ -151,21 +154,21 @@ img {
 }
 
 /* Button Styling */
-.first-section__btn {
-    display: block; /* Blok düzen */
-    margin: 0 auto; /* Ortalama */
-    min-width: 169px; /* Minimum genişlik */
-    height: 56px; /* Yükseklik */
-    border: none; /* Kenarlık yok */
-    background-color: #4d5ae5; /* Arka plan rengi */
-    border-radius: 4px; /* Kenar yumuşatma */
-    color: #ffffff; /* Yazı rengi */
+button{
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px; 
+    border: none; 
+    background-color: #4d5ae5;
+    border-radius: 4px;
+    color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer; /* İmleç efekti */
+    cursor: pointer; 
 }
 
 /* Button Hover and Focus Effects */
