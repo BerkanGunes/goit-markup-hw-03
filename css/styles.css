@@ -27,76 +27,136 @@ img {
     padding: 0 15px;
 }
 
-/* Header */
+/* Header Styling */
 .site-header {
-    border-bottom: 1px solid #e7e9fc;
+    border-bottom: 1px solid #e7e9fc; /* Alt çizgi */
+    background-color: #ffffff; /* Arka plan */
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 72px;
-    gap: 40px;
+    display: flex; /* Flex düzen */
+    justify-content: space-between; /* İçeriği yatayda dağıt */
+    align-items: center; /* Dikeyde ortala */
+    height: 72px; /* Yükseklik */
+    width: 1158px; /* Maksimum genişlik */
+    margin: 0 auto; /* Ortala */
+    padding: 0 15px; /* İç kenar boşlukları */
+    gap: 40px; /* Elemanlar arasındaki boşluk */
+}
+
+/* Navigation */
+.main-nav {
+    display: flex; /* Flex düzen */
+    align-items: center; /* Dikey hizalama */
+    gap: 40px; /* Logo ve menü arasındaki boşluk */
 }
 
 .nav-logo {
-    margin-right: 76px;
+    margin-right: 76px; /* Sağ kenar boşluğu */
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    color: #4d5ae5;
     text-transform: uppercase;
+    color: #4d5ae5; /* Logo metni rengi */
 }
 
+.logo-span {
+    color: #2e2f42; /* 'Studio' kelimesinin rengi */
+}
+
+/* Navigation List */
 .nav-list {
-    display: flex;
-    gap: 40px;
+    display: flex; /* Yatay hizalama */
+    gap: 40px; /* Elemanlar arasındaki boşluk */
+    list-style: none; /* Varsayılan liste stili kaldırıldı */
 }
 
 .nav-item {
-    padding: 24px 0;
+    padding: 24px 0; /* Dikey boşluk */
 }
 
 .nav-item .link {
     font-size: 16px;
-    color: #2e2f42;
+    color: #2e2f42; /* Menü bağlantı rengi */
+    text-decoration: none; /* Alt çizgi kaldırıldı */
 }
 
+.nav-item .link:hover {
+    color: #404bbf; /* Hover durumunda bağlantı rengi */
+}
+
+/* Contact List */
 .contact-list {
-    display: flex;
-    gap: 40px;
+    display: flex; /* Flex düzen */
+    gap: 40px; /* Elemanlar arasındaki boşluk */
 }
 
-/* First Section */
+.contact-list-ul {
+    display: flex; /* Flex düzen */
+    gap: 40px; /* İletişim bilgileri arasındaki boşluk */
+}
+
+.contact-list-ul li a {
+    font-size: 16px;
+    color: #434455; /* İletişim bilgisi rengi */
+    text-decoration: none;
+}
+
+.contact-list-ul li a:hover {
+    color: #404bbf; /* Hover durumunda renk değişimi */
+}
+
+/* First Section Styling */
 .first-section {
-    padding: 188px 0;
-    background-color: #2e2f42;
+    padding: 188px 0; /* Üst ve alt kenar boşlukları */
+    background-color: #2e2f42; /* Arka plan rengi */
+    display: flex; /* Flexbox etkinleştirildi */
+    flex-direction: column; /* Öğeler alt alta hizalanacak */
+    justify-content: center; /* Dikeyde ortalama */
+    align-items: center; /* Yatayda ortalama */
+    text-align: center; /* İçeriği ortala */
 }
 
+/* Container Styling */
+.container {
+    max-width: 1158px; /* Maksimum genişlik */
+    margin: 0 auto; /* Ortala */
+    text-align: center; /* İçeriği ortala */
+    padding: 0 15px; /* Kenar boşlukları */
+}
+
+/* H1 Styling */
 .first-section__title {
-    max-width: 496px;
-    font-size: 56px;
-    color: #ffffff;
-    margin: 0 auto 20px;
-    text-align: center;
+    max-width: 496px; /* Başlığın maksimum genişliği */
+    font-size: 56px; /* Yazı boyutu */
+    color: #ffffff; /* Yazı rengi */
+    margin-bottom: 20px; /* Alt boşluk */
+    line-height: 1.2; /* Satır yüksekliği */
+    letter-spacing: 0.02em; /* Harf arası boşluk */
 }
 
+/* Button Styling */
 .first-section__btn {
-    display: block;
-    margin: 0 auto;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    background-color: #4d5ae5;
-    border-radius: 4px;
-    color: #ffffff;
-    cursor: pointer;
+    display: block; /* Blok düzen */
+    margin: 0 auto; /* Merkezleme */
+    min-width: 169px; /* Minimum genişlik */
+    height: 56px; /* Yükseklik */
+    border: none; /* Kenarlık kaldırıldı */
+    background-color: #4d5ae5; /* Arka plan rengi */
+    border-radius: 4px; /* Kenar yumuşatma */
+    color: #ffffff; /* Yazı rengi */
+    font-family: "Roboto", sans-serif; /* Yazı tipi */
+    font-size: 16px; /* Yazı boyutu */
+    line-height: 1.5; /* Satır yüksekliği */
+    cursor: pointer; /* İmleç efekti */
 }
 
-.first-section__btn:hover {
-    background-color: #404bbf;
+/* Button Hover and Focus Effects */
+.first-section__btn:hover,
+.first-section__btn:focus {
+    background-color: #404bbf; /* Hover ve focus efekti */
 }
+
 
 /* Second Section */
 .second-section {
