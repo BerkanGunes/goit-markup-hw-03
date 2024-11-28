@@ -6,27 +6,28 @@ body {
 li{
     list-style-type: none;
 }
-/* Header ayarları */
-.header-class {
-    border-bottom: 1px solid #e7e9fc;
-}
-
-.header-container {
+header{
+    width: 1440px;
+    height: 72px;
+    gap: 0px;
+    opacity: 0px;
     display: flex;
-    justify-content: space-between;
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+    margin: 24px 156px 24px 156px;
+    gap: 332px;
 }
-
-/* Nav ayarları */
-.nav-class {
+header a{
+    text-decoration: none;
+}
+header ul,
+header li{
     display: flex;
-    align-items: center;
+    gap:40px;
+    
 }
-
+nav{
+    display: flex;
+}
 .nav-logo {
-    margin-right: 76px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -34,19 +35,11 @@ li{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    padding-top: 16px;
 }
 
 .nav-logo .logo-span {
     color: #2e2f42;
-}
-
-.nav-list {
-    display: flex;
-    gap: 40px;
-}
-
-.nav-list__list-item {
-    padding: 24px 0;
 }
 
 .nav-list__list-item .link {
@@ -62,15 +55,8 @@ li{
     color: #404bbf;
 }
 
-/* Contact ayarları */
 .contact {
-    display: flex;
-    align-items: center;
-}
-
-.contact-list {
-    display: flex;
-    gap: 40px;
+    font-style: normal;
 }
 
 .contact .link {
@@ -84,7 +70,6 @@ li{
 .contact .link:focus {
     color: #404bbf;
 }
-
 
 .first-section {
     display: flex; /* Flexbox etkinleştirilir */
