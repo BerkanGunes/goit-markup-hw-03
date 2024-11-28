@@ -1,67 +1,52 @@
-body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    background-color: #FFFFFF;
-    max-width: 1440px;
-}
 /* Global reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+    max-width: 1440px;
+}
+
+/* Görseller */
 img {
-    display: block;
-    max-width: 100%; /* Görüntülerin taşmasını önlemek için */
-    height: auto; /* Görüntü oranını korumak için */
+    display: block; /* Görseller için display: block */
+    max-width: 100%;
+    height: auto;
 }
 
-
-/* Container for standard width and centering */
+/* Container */
 .container {
-    display: flex; /* Display flex eklendi */
-    width: 1158px; /* İçeriğin genişliği ayarlandı */
-    margin: 0 auto; /* İçerik ortalandı */
-    padding: 0 15px; /* Kenar boşlukları ayarlandı */
+    display: flex;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-/* Header styling */
+/* Header */
 .site-header {
     border-bottom: 1px solid #e7e9fc;
 }
 
-/* Header container */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 72px;
     gap: 40px;
-    margin-left: 156px; /* 156px sola yaklaştır */
-    
-}
-
-
-/* Navigation */
-.main-nav {
-    display: flex; /* Display flex eklendi */
-    align-items: center;
-    gap: 40px;
 }
 
 .nav-logo {
-    margin-right: 76px; /* Sağ kenar boşluğu eklendi */
+    margin-right: 76px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: #4d5ae5;
-}
-
-.logo-span {
-    color: #2e2f42;
+    text-transform: uppercase;
 }
 
 .nav-list {
@@ -69,245 +54,154 @@ img {
     gap: 40px;
 }
 
-/* Navigation list items */
 .nav-item {
-    padding: 24px 0; /* Bütün liste elemanlarına uygulandı */
+    padding: 24px 0;
 }
+
 .nav-item .link {
-    font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: #2e2f42;
 }
 
-.nav-item .link:hover,
-.nav-item .link:focus {
-    color: #404bbf;
-}
-
-/* Address styling */
 .contact-list {
-    display: flex;
-}
-
-.contact-list-ul {
     display: flex;
     gap: 40px;
 }
-.contact-list-ul li a {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
 
-.contact-list .link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-.contact-list .link:hover,
-.contact-list .link:focus {
-    color: #404bbf;
-}
-
-
-/* Section Styling */
-/* Section Styling */
+/* First Section */
 .first-section {
-    padding: 188px 0; /* Kenar boşlukları */
-    background-color: #2e2f42; /* Arka plan rengi */
+    padding: 188px 0;
+    background-color: #2e2f42;
 }
 
-/* Container Styling */
-.container {
-    max-width: 1158px; /* Maksimum genişlik */
-    margin: 0 auto; /* Ortala */
-    text-align: center; /* İçeriği ortala */
-}
-
-/* H1 Styling */
 .first-section__title {
-    max-width: 496px; /* Başlığın maksimum genişliği */
-    font-size: 56px; /* Yazı boyutu */
-    line-height: 60px; /* Satır yüksekliği */
-    color: #ffffff; /* Yazı rengi */
-    letter-spacing: 0.02em; /* Harf arası boşluk */
-    margin: 0 auto 20px; /* Alt boşluk ve merkezleme */
+    max-width: 496px;
+    font-size: 56px;
+    color: #ffffff;
+    margin: 0 auto 20px;
+    text-align: center;
 }
 
-/* Button Styling */
 .first-section__btn {
-    display: block; /* Blok düzen */
-    margin: 0 auto; /* Merkezleme */
-    min-width: 169px; /* Minimum genişlik */
-    height: 56px; /* Yükseklik */
-    border: none; /* Kenarlık kaldır */
-    background-color: #4d5ae5; /* Arka plan rengi */
-    border-radius: 4px; /* Kenar yumuşatma */
-    color: #ffffff; /* Yazı rengi */
-    font-family: "Roboto", sans-serif;
-    font-weight: 500; /* Yazı kalınlığı */
-    font-size: 16px; /* Yazı boyutu */
-    line-height: 1.5; /* Satır yüksekliği */
-    letter-spacing: 0.04em; /* Harf arası boşluk */
-    cursor: pointer; /* İmleç efekti */
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    background-color: #4d5ae5;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
 }
 
-/* Button Hover and Focus Effects */
-.first-section__btn:hover,
-.first-section__btn:focus {
-    background-color: #404bbf; /* Hover ve focus efekti */
+.first-section__btn:hover {
+    background-color: #404bbf;
 }
 
-
-
-
-.second-section ul{
-    display: flex; /* Flexbox etkinleştirilir */       
-    align-items: center; /* Dikeyde hizalar */  
-    gap: 8px; /* Kutular arasındaki mesafe */  
-    padding: 156px;
+/* Second Section */
+.second-section {
+    padding: 120px 0;
 }
-.second-section li{
-    width: 264px;
-    height: 104px;
-    
+
+.second-section ul {
+    display: flex;
+    gap: 24px;
+}
+
+.second-section li {
+    width: calc((100% - 72px) / 4);
 }
 
 .second-section__list-title {
-    font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-    
+    margin-bottom: 8px;
 }
 
-.second-section .text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
+/* Third Section */
 .third-section {
+    padding: 120px 0;
     background-color: #f4f4fd;
-    width: 1440px;
-    height: 732px;
-    top: 1016px;
 }
 
 .third-section__title {
+    margin-bottom: 72px;
     font-size: 36px;
-    line-height: 1.11;
     text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-.third-section ul{
-    display: flex; /* Flexbox etkinleştirilir */       
-    align-items: center; /* Dikeyde hizalar */  
-    gap: 32px; /* Kutular arasındaki mesafe */  
-    padding: 156px;
-    
 }
 
-.third-section__list .list-item {
-    background-color: #ffffff;
-    
-}
-
-.third-section__list .member-name {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    
-}
-
-.third-section__list .text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    
-    
-}
-.forth-section{
-    width: 1128px;
-    height: 1000px; 
-    padding-left: 156px;    
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-
-}
-.forth-section__title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2E2F42;
-}
-.forth-section ul{
-    display: grid; /* Grid düzenini etkinleştirir */  
-    grid-template-columns: repeat(3, 1fr); /* 3 eşit sütun */  
-    grid-template-rows: repeat(2, auto);
-    gap: 20px; /* Öğeler arasındaki boşluk */
-    padding: 20px; /* Kapsayıcı iç boşluk */
-}
-.list-item__title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.list-item .text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-.footer {
-    background-color: #2e2f42;
-    width: 1440px;
-    height: 312px;
+.third-section__list {
     display: flex;
-    flex-direction: column; /* İçerikleri dikey sıralar */
-    align-items: flex-start; /* Yatayda sola hizalar */
-    padding-top: 100px; /* Tüm içerikler için yukarı boşluk */
-    padding-left: 156px;
-    }
-   .footer p{
-    width: 264px;
-    height: 72px;
-   } 
-.footer .text {
-    color: #F4F4FD;
-    letter-spacing: 0.02em;
-    line-height: 1.5;  
+    gap: 24px;
+}
+
+.list-item {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.list-item h3 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.list-item p {
+    text-align: center;
+}
+
+/* Fourth Section */
+.forth-section {
+    padding: 120px 0;
+}
+
+.forth-section__title {
+    margin-bottom: 72px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.forth-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.forth-section li {
+    width: calc((100% - 72px) / 4);
+}
+
+.forth-section li div {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+    padding: 100px 0;
+    background-color: #2e2f42;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 16px;
     font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: #4d5ae5;
-    }
-    
-
+}
 
 .footer-logo .logo-span {
+    color: #ffffff;
+}
+
+.footer p {
+    max-width: 264px;
     color: #f4f4fd;
+    text-align: center;
 }
