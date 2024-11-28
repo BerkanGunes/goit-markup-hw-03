@@ -144,10 +144,6 @@ img {
     border: none; /* Kenarlık kaldırıldı */
     background-color: #4d5ae5; /* Arka plan rengi */
     border-radius: 4px; /* Kenar yumuşatma */
-    color: #ffffff; /* Yazı rengi */
-    font-family: "Roboto", sans-serif; /* Yazı tipi */
-    font-size: 16px; /* Yazı boyutu */
-    line-height: 1.5; /* Satır yüksekliği */
     cursor: pointer; /* İmleç efekti */
 }
 
