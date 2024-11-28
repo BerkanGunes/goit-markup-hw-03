@@ -23,13 +23,17 @@ body {
     border-bottom: 1px solid #e7e9fc;
 }
 
+/* Header container */
 .header-container {
-    display: flex; /* Display flex eklendi */
+    display: flex;
     justify-content: space-between;
     align-items: center;
     height: 72px;
     gap: 40px;
+    margin-left: 156px; /* 156px sola yaklaştır */
+    
 }
+
 
 /* Navigation */
 .main-nav {
@@ -62,12 +66,6 @@ body {
 .nav-item {
     padding: 24px 0; /* Bütün liste elemanlarına uygulandı */
 }
-
-.nav-list li:first-child {
-    padding: 24px 0; /* Sadece 1. maddeye uygulanır */
-}
-
-
 .nav-item .link {
     font-weight: 500;
     font-size: 16px;
