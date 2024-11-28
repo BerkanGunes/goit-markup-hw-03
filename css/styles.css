@@ -58,9 +58,15 @@ body {
     gap: 40px;
 }
 
+/* Navigation list items */
 .nav-item {
-    padding: 24px 0;
+    padding: 24px 0; /* Bütün liste elemanlarına uygulandı */
 }
+
+.nav-list li:first-child {
+    padding: 24px 0; /* Sadece 1. maddeye uygulanır */
+}
+
 
 .nav-item .link {
     font-weight: 500;
