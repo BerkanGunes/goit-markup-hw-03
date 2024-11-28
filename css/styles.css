@@ -10,6 +10,12 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+img {
+    display: block;
+    max-width: 100%; /* Görüntülerin taşmasını önlemek için */
+    height: auto; /* Görüntü oranını korumak için */
+}
+
 
 /* Container for standard width and centering */
 .container {
@@ -110,55 +116,44 @@ body {
 
 
 /* Section Styling */
-.first-section {
-    padding: 188px 0; /* Kenar boşlukları */
-    background-color: #2e2f42; /* Arka plan rengi */
-}
-
-/* Container */
-.container {
-    max-width: 1158px;
-    margin: 0 auto;
-    text-align: center; /* İçeriği ortalar */
-    margin: 0 auto;
-}
-
 /* Section Styling */
 .first-section {
-    display: flex;
-    flex-direction: column; /* İçeriği dikey hizalar */
-    justify-content: center; /* Dikeyde ortalar */
-    align-items: center; /* Yatayda ortalar */
     padding: 188px 0; /* Kenar boşlukları */
     background-color: #2e2f42; /* Arka plan rengi */
-    text-align: center; /* İçeriği ortalar */
+}
+
+/* Container Styling */
+.container {
+    max-width: 1158px; /* Maksimum genişlik */
+    margin: 0 auto; /* Ortala */
+    text-align: center; /* İçeriği ortala */
 }
 
 /* H1 Styling */
 .first-section__title {
-    max-width: 496px; /* Başlığın genişliği */
-    font-size: 56px;
-    line-height: 60px;
-    color: #ffffff;
-    letter-spacing: 0.02em;
-    margin-bottom: 20px; /* Alt boşluk (düğme için) */
+    max-width: 496px; /* Başlığın maksimum genişliği */
+    font-size: 56px; /* Yazı boyutu */
+    line-height: 60px; /* Satır yüksekliği */
+    color: #ffffff; /* Yazı rengi */
+    letter-spacing: 0.02em; /* Harf arası boşluk */
+    margin: 0 auto 20px; /* Alt boşluk ve merkezleme */
 }
 
 /* Button Styling */
 .first-section__btn {
     display: block; /* Blok düzen */
-    margin: 0 auto; /* Ortalama */
+    margin: 0 auto; /* Merkezleme */
     min-width: 169px; /* Minimum genişlik */
     height: 56px; /* Yükseklik */
-    border: none; /* Kenarlık yok */
+    border: none; /* Kenarlık kaldır */
     background-color: #4d5ae5; /* Arka plan rengi */
     border-radius: 4px; /* Kenar yumuşatma */
     color: #ffffff; /* Yazı rengi */
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+    font-weight: 500; /* Yazı kalınlığı */
+    font-size: 16px; /* Yazı boyutu */
+    line-height: 1.5; /* Satır yüksekliği */
+    letter-spacing: 0.04em; /* Harf arası boşluk */
     cursor: pointer; /* İmleç efekti */
 }
 
@@ -167,6 +162,7 @@ body {
 .first-section__btn:focus {
     background-color: #404bbf; /* Hover ve focus efekti */
 }
+
 
 
 
