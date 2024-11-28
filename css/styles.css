@@ -176,8 +176,14 @@ button{
 .first-section__btn:focus {
     background-color: #404bbf; /* Hover ve focus efekti */
 }
+.second-section {
+    padding: 120px 0; /* Kenar boşlukları */
+}
 
-
+.container {
+    max-width: 1200px; /* İsteğe bağlı genişlik sınırı */
+    margin: 0 auto;    /* Ortalama */
+}
 
 .visually-hidden {
     position: absolute;
@@ -193,11 +199,16 @@ button{
 
 .second-section__list {
     display: flex;
-    gap: 24px;
+    gap: 24px; /* Elementler arasındaki boşluk */
+    list-style: none; /* Varsayılan madde işaretlerini kaldır */
+    padding: 0; /* Varsayılan padding'i kaldır */
+    margin: 0; /* Varsayılan margin'i kaldır */
 }
 
 .second-section__item {
-    width: calc((100% - 72px) / 4); /* Liste öğesi genişliği */
+    width: calc((100% - 3 * 24px) / 4); /* Liste öğesi genişliği */
+    flex-basis: calc((100% - 3 * 24px) / 4); /* Alternatif genişlik */
+    box-sizing: border-box; /* Kenar boşluklarının genişlik hesaplamasına dahil edilmesi */
 }
 
 .second-section__list-title {
@@ -215,6 +226,7 @@ button{
     letter-spacing: 0.02em;
     color: #434455;
 }
+
 
 
 .third-section {
