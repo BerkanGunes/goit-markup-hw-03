@@ -179,25 +179,34 @@ button{
 
 
 
-.second-section ul{
-    display: flex; /* Flexbox etkinleştirilir */       
-    align-items: center; /* Dikeyde hizalar */  
-    gap: 8px; /* Kutular arasındaki mesafe */  
-    padding: 156px;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
-.second-section li{
-    width: 264px;
-    height: 104px;
-    
+
+.second-section__list {
+    display: flex;
+    gap: 24px;
+}
+
+.second-section__item {
+    width: calc((100% - 72px) / 4); /* Liste öğesi genişliği */
 }
 
 .second-section__list-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    
 }
 
 .second-section .text {
@@ -206,6 +215,7 @@ button{
     letter-spacing: 0.02em;
     color: #434455;
 }
+
 
 .third-section {
     background-color: #f4f4fd;
