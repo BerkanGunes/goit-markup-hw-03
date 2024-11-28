@@ -2,6 +2,7 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
+    max-width: 1440px;
 }
 /* Global reset */
 * {
@@ -119,6 +120,7 @@ body {
     max-width: 1158px;
     margin: 0 auto;
     text-align: center; /* İçeriği ortalar */
+    margin: 0 auto;
 }
 
 /* Section Styling */
