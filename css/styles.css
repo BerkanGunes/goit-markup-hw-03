@@ -230,10 +230,13 @@ button{
 
 
 .third-section {
+    padding: 120px 0; /* Kenar boşlukları */
     background-color: #f4f4fd;
-    width: 1440px;
-    height: 732px;
-    top: 1016px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .third-section__title {
@@ -243,36 +246,48 @@ button{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-}
-.third-section ul{
-    display: flex; /* Flexbox etkinleştirilir */       
-    align-items: center; /* Dikeyde hizalar */  
-    gap: 32px; /* Kutular arasındaki mesafe */  
-    padding: 156px;
-    
+    margin-bottom: 72px; /* Başlık alt boşluğu */
 }
 
-.third-section__list .list-item {
+.third-section__list {
+    display: flex;
+    gap: 24px;
+    list-style: none; /* Varsayılan madde işaretlerini kaldır */
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
     background-color: #ffffff;
-    
+    border-radius: 0px 0px 4px 4px; /* Alt kısımdaki yuvarlaklıklar */
+    overflow: hidden; /* İçerik taşmasını önler */
+    text-align: center;
 }
 
-.third-section__list .member-name {
+.list-item__details {
+    padding: 32px 0; /* Çalışanın adı ve unvanı için boşluk */
+}
+
+.member-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    
+    margin-bottom: 8px; /* Başlık alt boşluğu */
+    text-align: center;
 }
 
-.third-section__list .text {
+.text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
-    
+    text-align: center; /* Metin hizalaması */
+    color: #434455;
 }
+
 .forth-section{
     width: 1128px;
     height: 1000px; 
