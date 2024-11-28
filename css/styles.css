@@ -9,11 +9,10 @@ li{
 header{
     width: 1440px;
     height: 72px;
-    gap: 0px;
-    opacity: 0px;
     display: flex;
     margin: 24px 156px 24px 156px;
     gap: 332px;
+    border-bottom: 1px solid #e7e9fc;
 }
 header a{
     text-decoration: none;
@@ -26,6 +25,7 @@ header li{
 }
 nav{
     display: flex;
+    align-items: center;
 }
 .nav-logo {
     font-family: "Raleway", sans-serif;
