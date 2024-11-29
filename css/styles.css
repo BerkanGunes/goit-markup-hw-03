@@ -232,6 +232,9 @@ button{
 
 .third-section .container {
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .third-section__title {
@@ -242,8 +245,8 @@ button{
 }
 
 .third-section__list {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 24px;
     list-style: none;
     padding: 0;
@@ -252,20 +255,28 @@ button{
 
 .list-item {
     background-color: #ffffff;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    border-radius: 4px; /* Varsayılan yuvarlaklık */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: calc((100% - 72px) / 4);
-    flex-basis: calc((100% - 72px) / 4);
     text-align: center;
-    padding: 32px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 32px 0; /* Bloğun alt kısmı için padding */
+}
+
+/* İlk listedeki öğeye özel border-radius */
+.third-section__list .list-item:first-child {
+    border-radius: 0px 0px 4px 4px; /* Alt köşeleri yuvarla */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 .team-image {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #f4f4fd; /* Alt çizgi efekti */
-    margin-bottom: 16px; /* Görüntü ile yazı arasında boşluk */
+    border-bottom: 2px solid #f4f4fd;
+    margin-bottom: 16px;
 }
 
 .list-item__details {
@@ -284,17 +295,13 @@ button{
     color: #434455;
     line-height: 1.5;
 }
+
    
 
 .forth-section {
     padding: 120px 0;
     background-color: #ffffff;
     text-align: center;
-}
-
-.container4 {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .forth-section__title {
@@ -319,7 +326,7 @@ button{
 }
 
 .list-item {
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4); /* Varsayılan genişlik */
     max-width: 360px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -327,6 +334,11 @@ button{
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+/* İlk listedeki öğeye özel genişlik */
+.forth-section__list .list-item:first-child {
+    width: calc((100% - 72px) / 4); /* İlk öğeye özel genişlik */
 }
 
 .list-item__image {
@@ -341,6 +353,7 @@ button{
     padding: 32px 16px;
     margin-bottom: 8px;
     border: 1px solid #e7e9fc;
+    border-top: none; /* Üst kenar sınırı kaldırıldı */
 }
 
 .list-item__title {
@@ -359,8 +372,6 @@ button{
     color: #434455;
 }
 
-
-
 .footer {
     background-color: #2e2f42;
     width: 1440px;
@@ -368,20 +379,20 @@ button{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 100px 0;
-    padding-left: 156px;
+    justify-content: flex-start; /* Eklenen özellik */
+    padding: 100px 0; /* Doğru padding */
   }
   
   .footer .container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 100px 0;
-    padding-left: 156px;
-}
+    padding: 0; /* Çakışma olmaması için sıfırlandı */
+    margin-left: 156px; /* padding-left yerine margin */
+  }
   
   .footer-logo_link {
-    display: inline-block;
+    display: inline-block; /* İstenen stil */
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
