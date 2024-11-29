@@ -37,6 +37,7 @@ img {
     height: 72px;
     gap: 40px;
     margin-left: 156px; /* Eklenen özel düzen */
+    width: 1158px;
 }
 
 
@@ -77,6 +78,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .nav-item .link:hover,
@@ -250,12 +252,13 @@ button{
 
 .list-item {
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
     overflow: hidden;
     width: calc((100% - 72px) / 4);
     flex-basis: calc((100% - 72px) / 4);
     text-align: center;
+    padding: 32px 0;
 }
 
 .team-image {
@@ -316,10 +319,9 @@ button{
 }
 
 .list-item {
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
     max-width: 360px;
     background-color: #f9f9f9;
-    border: 1px solid #e7e9fc;
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
@@ -338,6 +340,7 @@ button{
 .list-item__content {
     padding: 32px 16px;
     margin-bottom: 8px;
+    border: 1px solid #e7e9fc;
 }
 
 .list-item__title {
