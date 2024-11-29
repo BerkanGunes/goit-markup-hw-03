@@ -18,29 +18,25 @@ img {
     height: auto; /* Görüntü oranını korumak için */
 }
 
-
-/* Container for standard width and centering */
 .container {
-    display: flex; /* Display flex eklendi */
-    width: 1158px; /* İçeriğin genişliği ayarlandı */
-    margin: 0 auto; /* İçerik ortalandı */
-    padding: 0 15px; /* Kenar boşlukları ayarlandı */
+    max-width: 1200px; /* Genel genişlik */
+    margin: 0 auto;    /* İçerik ortalaması */
+    padding: 0 15px;   /* Kenar boşlukları */
 }
+
 
 /* Header styling */
 .site-header {
     border-bottom: 1px solid #e7e9fc;
 }
 
-/* Header container */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 72px;
     gap: 40px;
-    margin-left: 156px; /* 156px sola yaklaştır */
-    
+    margin-left: 156px; /* Eklenen özel düzen */
 }
 
 
@@ -126,12 +122,8 @@ h1 {
     background-color: #2e2f42; /* Arka plan rengi */
 }
 
-/* Container */
-.container1 {
-    max-width: 1158px;
-    margin: 0 auto;
-    text-align: center; /* İçeriği ortalar */
-    margin: 0 auto;
+.first-section .container {
+    text-align: center; /* İlk bölüm özel stili */
 }
 
 /* Section Styling */
@@ -236,9 +228,8 @@ button{
     text-align: center;
 }
 
-.container3 {
-    max-width: 1200px;
-    margin: 0 auto;
+.third-section .container {
+    text-align: center;
 }
 
 .third-section__title {
@@ -378,9 +369,13 @@ button{
     padding-left: 156px;
   }
   
-  .container5 {
-    /* İçeriği kapsayan konteyner */
-  }
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 0;
+    padding-left: 156px;
+}
   
   .footer-logo_link {
     display: inline-block;
